@@ -1,0 +1,33 @@
+{
+  "name": "vaultbox",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev:bot": "nodemon --ignore 'uploads/*' --ignore 'src/api/*' --exec ts-node src/bot/index.ts",
+    "dev:api": "nodemon --ignore 'uploads/*' --ignore 'src/bot/*' --exec ts-node src/api/server.ts",
+    "dev": "concurrently \"npm run dev:bot\" \"npm run dev:api\""
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^24.6.2",
+    "eslint": "^9.37.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "nanoid": "^5.1.6",
+    "node-cron": "^4.2.1",
+    "telegraf": "^4.16.3"
+  }
+}
