@@ -4,6 +4,9 @@ import path from "path";
 import fs from "fs";
 import { config } from "dotenv";
 
+// IMPORT CRON JOB
+import "../jobs/cleanup";
+
 config();
 const app = express();
 
