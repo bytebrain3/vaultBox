@@ -1,19 +1,22 @@
-# Telegram File Upload Bot
 
-A lightweight Telegram bot that allows users to upload files (photos, videos, documents), stores them in local folders, and automatically cleans up uploaded files daily at midnight. No database is required — everything is stored on the filesystem.
+
+# Telegram File Upload Bot for Raspberry Pi
+
+I built this lightweight Telegram bot specifically to run on my **Raspberry Pi**. It allows users to upload files (photos, videos, documents), stores them in local folders, and automatically cleans up uploaded files daily at midnight. No database is required — everything is stored on the filesystem.
 
 ---
 
 ## Features
 
-- Upload photos, videos, and other files via Telegram.
-- Files are saved into dedicated folders:
-  - `uploads/photo`
-  - `uploads/video`
-  - `uploads/other`
-- Daily automatic cleanup of all uploaded files at midnight.
-- Lightweight and easy to set up.
-- Configurable upload directories via environment variables.
+* Upload photos, videos, and other files via Telegram.
+* Files are saved into dedicated folders:
+
+  * `uploads/photo`
+  * `uploads/video`
+  * `uploads/other`
+* Daily automatic cleanup of all uploaded files at midnight.
+* Lightweight and easy to set up.
+* Configurable upload directories via environment variables.
 
 ---
 
@@ -90,6 +93,7 @@ project/
 
 ## Notes
 
-- Files larger than 50 MB are automatically rejected.
-- No database is used — everything is stored in the filesystem.
-- Ensure the bot has write permissions for the `uploads` folder.
+* Files larger than 50 MB are automatically rejected.
+* No database is used — everything is stored in the filesystem.
+* Ensure the bot has write permissions for the `uploads` folder.
+
